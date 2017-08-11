@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.dropdown {
+	position: absolute;
+	right: 200px;
+	top: 50px;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#one {
+	background-color: cyan;
+	position: relative;
+}
+
+.carousel-inner>.item >img {
+	width: 950px;
+	height: 500px;
+}
+</style>
+</head>
+<body>
+	<header id="one">
+		<br>
+		<h1>
+			<center>Welcome to Quizify</center>
+			<br>
+		</h1>
+	</header>
+	<br>
+	
+	<h1><center>Please make sure you want to delete a entity</center></h1>
+	
+	<form action="QuestionDelete" method="get">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3">
+					<label> Question name:</label>
+				</div>
+				<div class="col-xs-3">
+					<input type="text" class="form-control" name="s1" id="sname">
+				</div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-8">
+					<a class="btn btn-primary btn-lg" href="delete.html"
+						role="button">Delete</a> 
+						<a class="btn btn-primary btn-lg" href="subject.html"
+						role="button">Home</a> 
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

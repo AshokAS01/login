@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body {
+	background-color: #ffffff;
+}
+
+#one {
+	background-color: cyan;
+	position: relative;
+}
+</style>
+</head>
+<body>
+<form action="SubjectServlet"  method="get">
+
+	<header id="one">
+		<br>
+		<h1>
+			<center>Welcome to Quizify</center>
+			<br>
+		</h1>
+	</header>
+	<br>
+
+		<center>
+			<h2>Add your subject here</h2>
+		</center>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3">
+					<label> Subject name:</label>
+				</div>
+				<div class="col-xs-3">
+					<input type="text" class="form-control" name="s1" id="sname">
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3">
+					<label>Subject Description:</label>
+				</div>
+
+				<div class="col-xs-3">
+					<input type="text" class="form-control" name="s2" id="sdes">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-8">
+					<input type="submit" value="Add">
+						<input type="reset"	class="btn btn-primary btn-lg" value="clear"><br>
+				</div>
+			</div>
+		</div>
+	</form>
+
+
+
+</body>
+</html>

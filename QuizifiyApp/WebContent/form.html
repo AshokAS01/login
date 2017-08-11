@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.dropdown {
+	position: absolute;
+	right: 200px;
+	top: 50px;
+}
+
+body {
+	background-color: lavender;
+}
+
+#one {
+	background-color: lavenderblush;
+	position: relative;
+}
+</style>
+</head>
+<body>
+
+
+	<h1>
+		<center>Welcome to Quizify</center>
+	</h1>
+	<br>
+	<br>
+
+	<div id="one">
+		<div class="fluid-container">
+
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button"
+					data-toggle="dropdown">
+					Student<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="active"><a href="form.html">Student</a></li>
+					<li><a href="fLogIn.html">Faculty</a></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<form action="LogInServlet" method="get" >
+			<center>
+				<h2>Student Login Form</h2>
+			</center>
+			<label><b>UserName:</b></label> <input type="text" name="uid" id="11" required="required"><br>
+			<br> <label><b>Password:</b></label> <input type="text"
+				name="pwd" id="22" required="required"><br> <br> <input type="submit"
+				value="Login"> <input type="reset" value="clear"><br>
+			<br> <a href="SignUp.html"><input type="button"
+				value="signup"></a>
+		</form>
+		<br>
+	</div>
+</body>
+</html>
